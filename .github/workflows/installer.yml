@@ -23,6 +23,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - name: Checkout
+      uses: actions/checkout@2.5.0
+      
     - name: Building the installer
       run: |
         "%programfiles(x86)%\Inno Setup 6\iscc.exe" "Setup\innosetup.iss"
