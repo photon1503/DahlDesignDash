@@ -31,6 +31,5 @@ jobs:
         prerelease: ${{ github.event.inputs.is-pre-release }}
         replacesArtifacts: true
         allowUpdates: true
-        name: ${{ github.event.inputs.version }}
-        tag: ${{ github.event.inputs.version }}
+        name: ${{ github.event.inputs.version }}      
     
